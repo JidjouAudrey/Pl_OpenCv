@@ -1,0 +1,3 @@
+ALTER TABLE Users
+ADD
+PRIMARY KEY (id_user);

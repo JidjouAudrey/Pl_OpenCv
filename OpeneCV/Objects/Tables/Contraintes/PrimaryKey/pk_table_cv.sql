@@ -1,0 +1,3 @@
+ALTER TABLE Cv
+ADD
+PRIMARY KEY (id_cv);

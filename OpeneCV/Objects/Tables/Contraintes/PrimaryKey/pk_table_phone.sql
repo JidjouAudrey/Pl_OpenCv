@@ -1,0 +1,3 @@
+ALTER TABLE Phones
+ADD
+PRIMARY KEY (id_phone);
