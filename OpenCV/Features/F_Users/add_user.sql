@@ -9,6 +9,7 @@ VALUES (seq_users.nextval,
 	'&email',
 	'&user_password');
 
-select * from users;
+select name_user "Username",email
+from users;
 
 
