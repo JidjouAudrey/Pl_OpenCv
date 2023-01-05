@@ -68,10 +68,7 @@ values
     id_cv,
 );
 
-    v_option := case '&choix'
-        when '1' then 'action_respo'
-        when '2' then 'quitter'
-    end ;
+
 
 exception
 when no_data_found then
