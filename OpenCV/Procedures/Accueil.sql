@@ -1,12 +1,12 @@
 PROMPT******************************BIENVENUE SUR OPEN CV****************************
 PROMPT
-PROMPT'                              ***********************************************'
-PROMPT'                              |                                              |'
-PROMPT'                              |           1- Inscription                     |'
-PROMPT'                              |           2- Connexion                       |'
-PROMPT'                              |           3- Quitter                         |'
-PROMPT'                              |                                              |'
-PROMPT'                              ************************************************'
+PROMPT'      ***********************************************'
+PROMPT'      **                                           **'
+PROMPT'      **           1- Inscription                  **'
+PROMPT'      **           2- Connexion                    **'
+PROMPT'      **           3- Quitter                      **'
+PROMPT'      **                                           **'
+PROMPT'      ***********************************************'
 
 accept selection prompt "Choisissez une option: "
 set term off
@@ -15,7 +15,7 @@ select case '&selection'
         when '1' then '@features/f_users/add_user'
         when '2' then '@connection'
         when '3' then '@exit'
-        else 'Accueil'
+        else '@Accueil'
         end as script
 from dual;
 set term on
