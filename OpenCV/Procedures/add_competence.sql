@@ -1,83 +1,61 @@
 declare
-v_id_Competence         Competence.id_Competence%type;
-v_name_competence       Competence.name_competence%type;
-v_level_competence      Competence.level_competence%type;
-v_id_recommandation     Recommandation.id_recommandation%type;
-v_id_hobbies            Hobbies.id_hobbies%type;
-v_id_formation          Formation.id_formation%type;
-v_id_cv                 Cv.id_cv%type;
-v_option varchar(50);
-choix char ;
 
-procedure add_competence as
-begin
-
-Competence
-
-select id_exp
-into v_exp_id
-from Experience xp
-join User us 
-on xp.id_user = us.id_user
-where title_exp='&title_exp';
-
-
-select id_cv
-into v_cv_id
-from Cv c
-join User us
-on us.id_user = c.id_user
-where name_utilisateur='&name_utilisateur';
-
-IF SQL%found THEN
-
-select id_Competence
-into v_id_Competence
-from Competence
-where name_competence='&name_competence';
-
-select name_competence
-into v_name_competence
-from Competence
-where id_Competence='&&id_Competence';
-
-select id_user
-into v_level_competence
-from Competence
-where id_Competence='&&id_Competence';
-
-insert into Competence
-(
-    id_Competence,
-    name_competence,
-    level_competence,
-    id_recommandation,
-    id_hobbies,
-    id_formation,
-    id_cv
-)
-
-values 
-(
-    id_Competence_seq.nextval,
-    '&name_competence',
-    '&level_competence',
-    id_recommandation,
-    id_hobbies,
-    id_formation,
-    id_cv,
-);
-
-
-
-exception
-when no_data_found then
-    DBMS_OUTPUT.PUT_LINE('**********************************************'); 
-         DBMS_OUTPUT.PUT_LINE('*     aucune valeur trouvé   *') ;
-    DBMS_OUTPUT.PUT_LINE('**********************************************') ;
-
-end;
+  v_id_recom          Recommandation.id_recom%type;
+  v_id_hobbies        Hobbies.id_hobbies%type;  
+  v_id_formation      Formation.id_formation%type;
+  v_id_cv             Cv.id_cv%type;
+    
 
 begin
-add_formation;
-end;
+
+   select id_formation
+    into v_id_formation 
+    from Formation f
+    join Users u
+    on f.id_user=u.id_user
+    where u.name_user = '&&name_user';
+
+    select id_recom
+    into v_id_recom 
+    from Recommandation r
+    join Users u
+    on  r.id_user=u.id_user
+    where u.name_user = '&name_user';
+
+    select id_hobbies
+    into v_id_hobbies 
+    from Hobbies h
+    join Users u
+    on h.id_user=u.id_user
+    where u.name_user = '&name_user';
+
+    select id_cv
+    into v_id_cv 
+    from Cv cv 
+    join Users u
+    on cv.id_user=u.id_user
+    where u.name_user = '&name_user';
+
+ 
+    insert into Competence 
+    (
+        id_Compet,
+        name_compet,
+        level_compet,
+        id_recom,
+        id_hobbies,
+        id_formation,
+        id_cv
+    )
+    values
+    (
+  seq_soc_net.nextval,
+	'&name_compet',
+	'&level_compet',
+     v_id_recom,
+      v_id_hobbies,
+    v_id_formation,   
+    v_id_cv
+    );
+end ;
+/
