@@ -1,7 +1,7 @@
 ALTER TABLE Phones
     ADD (
         CONSTRAINT phoneNumber CHECK (
-        phone_number like '6________')
+        phoneNumber like '6________')
         );
     
     

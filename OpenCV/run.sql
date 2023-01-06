@@ -26,6 +26,7 @@ PROMPT ***********************************Creation des tables*******************
 SPOOL OFF
 
 SELECT table_name FROM user_tables; 
+@Procedures/Accueil
 
 
 

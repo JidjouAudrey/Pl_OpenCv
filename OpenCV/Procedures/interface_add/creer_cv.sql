@@ -14,10 +14,11 @@ accept selection prompt "Choisissez une option: "
 set term off
 column script new_value v_script
 select case '&selection'
-        when '1' then '@ '
-        when '2' then '@ '
-        when '3' then '@ '
-        when '4' then '@ '
+        when '1' then '@Procedures/interface_add/procedures/Add_Profile '
+        when '2' then '@Procedures/interface_add/procedures/add_langue '
+        when '3' then '@Procedures/interface_add/procedures/Add_country '
+        when '4' then '@Procedures/menu '
+        when '5' then '@Procedures/interface_add/voir_plus '
         else 'Accueil'
         end as script
 from dual;

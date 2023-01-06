@@ -1,4 +1,4 @@
-PROMPT**************************************************"BIENVENUE SUR Open_Cv"****************************************************
+PROMPT************************************************** BIENVENUE SUR Open_Cv ****************************************************
 PROMPT
 PROMPT'      *********************************************************'       
 PROMPT'      **                1:Creer un CV                        **'
@@ -14,8 +14,8 @@ accept selection PROMPT "choisissez une option : "
 set term off
 column script new_value v_script
 select  case '&selection'
-        when '1' then '@edit_cv'
-        when '2' then '@'
+        when '1' then '@Procedures/interface_add/creer_cv'
+        when '2' then '@Procedures/interface_add/modifier_cv'
         when '3' then '@'
         when '4' then '@features/view_cv'
         when '5' then '@'

@@ -7,5 +7,5 @@ PROMPT******************** ajout de contraintes check date**********************
 
 @Objects/Tables/Contraintes/Check/Ce_user
 
-@Objects/Tables/Contraintes/Check/Ce_userPhones
+
 
