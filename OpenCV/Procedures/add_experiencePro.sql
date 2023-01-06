@@ -30,4 +30,7 @@ insert into  Professional_exp
 		v_id_exp);
 end ;
 /
-  select * from Professional_exp;
+
+select id_exp
+into   v_id_exp
+from Professional_exp WHERE id_exp=seq_prof_exp;
