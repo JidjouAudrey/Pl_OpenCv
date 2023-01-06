@@ -14,13 +14,13 @@ accept selection PROMPT "choisissez une option : "
 set term off
 column script new_value v_script
 select  case '&selection'
-        when '1' then '@'
+        when '1' then '@edit_cv'
         when '2' then '@'
         when '3' then '@'
-        when '4' then '@'
+        when '4' then '@features/view_cv'
         when '5' then '@'
         when '6' then '@'
-        when '7' then '@'
+        when '7' then '@procedures/exit'
         else 'Procedure/Case'
         end as script
 from dual;

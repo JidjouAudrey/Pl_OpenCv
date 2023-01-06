@@ -45,3 +45,6 @@ PROMPT******************** ajout de contraintes pk table socialnetwork**********
 @Objects/Tables/Contraintes/Check/RunCheck
 
 @Objects/Tables/Contraintes/NotNull/RunValue
+
+@Objects/Tables/Contraintes/UniqueConstraint/runUnique
+
