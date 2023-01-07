@@ -1,6 +1,6 @@
 UPDATE Project
 SET
-name = '&name', 
+name_project = '&name', 
 status_user = '&status_user',
 startDate = '&startDate',
 endDate = '&endDate',
