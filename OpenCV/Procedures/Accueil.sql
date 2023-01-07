@@ -2,13 +2,15 @@ PROMPT******************************BIENVENUE SUR OPEN CV***********************
 PROMPT              *************************************************
 
 PROMPT
-PROMPT'      ***********************************************'
-PROMPT'      **                                           **'
-PROMPT'      **           1- Inscription                  **'
-PROMPT'      **           2- Connexion                    **'
-PROMPT'      **           3- Quitter                      **'
-PROMPT'      **                                           **'
-PROMPT'      ***********************************************'
+PROMPT'      **********************BIENVENUE SUR OPEN CV**********************'
+PROMPT'      **                                                             **'
+PROMPT'      ********                 1- Inscription                  ********'
+PROMPT'      **********               2- Connexion                  **********'
+PROMPT'      *************            3- Quitter                 *************'
+PROMPT'      **********                                             **********'
+PROMPT'      ********                                                 ********'
+PROMPT'      **                                                             **'
+PROMPT'      *****************************************************************'
 
 accept selection prompt "Choisissez une option: "
 set term off

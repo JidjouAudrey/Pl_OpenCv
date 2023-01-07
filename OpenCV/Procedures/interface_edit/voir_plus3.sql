@@ -14,7 +14,7 @@ column script new_value v_script
 select case '&selection'
         when '1' then '@Procedures/interface_edit/procedure_edit/edit_recommandation'
         when '2' then '@Procedures/interface_edit/procedure_edit/edit_competence'
-        when '3' then '@Procedures/interface_edit/voir_plus2'
+        when '3' then '@procedures/menu'
         else 'Accueil'
         end as script
 from dual;
