@@ -18,7 +18,7 @@ set term off
 column script new_value v_script
 select case '&selection'
         when '1' then '@ '
-        when '2' then '@ '
+        when '2' then '@Procedures/interface_add/Edit_formation'
         when '3' then '@ '
         when '4' then '@ '
         when '5' then '@ '

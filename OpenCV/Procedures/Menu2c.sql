@@ -16,7 +16,7 @@ column script new_value v_script
 select case '&selection'
         when '1' then '@ '
         when '2' then '@ '
-        when '3' then '@ '
+        when '3' then '@'
         when '4' then '@ '
         else 'Accueil'
         end as script
