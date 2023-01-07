@@ -20,7 +20,7 @@ begin
     from Recommandation r
     join Users u
     on  r.id_user=u.id_user
-    where u.name_user = '&name_user';
+    where u.name_user = '&&name_user';
 
     select id_hobbies
     into v_id_hobbies 

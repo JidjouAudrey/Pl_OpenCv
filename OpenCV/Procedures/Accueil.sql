@@ -14,7 +14,7 @@ accept selection prompt "Choisissez une option: "
 set term off
 column script new_value v_script
 select case '&selection'
-        when '1' then '@features/f_users/add_user'
+        when '1' then '@procedures/interface_add/procedures/Add_user'
         when '2' then '@connection'
         when '3' then '@exit'
         else '@Accueil'

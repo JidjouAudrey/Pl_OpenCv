@@ -5,7 +5,7 @@ PROMPT******************** ajout de contraintes check date**********************
 
 @Objects/Tables/Contraintes/Check/Ce_Table_project
 
-@Objects/Tables/Contraintes/Check/Ce_user
+prompt @Objects/Tables/Contraintes/Check/Ce_user
 
 
 

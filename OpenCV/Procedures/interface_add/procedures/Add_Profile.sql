@@ -1,3 +1,4 @@
+SET SERVEROUTPUT ON;
 declare
 
 v_id_user   profil.id_user%type;
@@ -9,7 +10,7 @@ into v_id_user
 from Users u
 join profil p
 on (u.id_user = p.id_user)
-where name_user='&Votre_Nom';
+where name_user='&USERNAME';
 
 insert into profil
 (
@@ -38,5 +39,10 @@ values
     v_id_user
 );
 
+ DBMS_OUTPUT.PUT_LINE('Profil created');
+exception
+ when no_data_found then
+  DBMS_OUTPUT.PUT_LINE('aucune valeur trouvée');
 end ;
 /
+@Procedures/interface_add/creer_cv

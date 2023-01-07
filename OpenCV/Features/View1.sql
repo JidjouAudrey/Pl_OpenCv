@@ -2,18 +2,7 @@ SELECT * FROM users
 WHERE name_user = '&&user_name' 
 AND user_password = '&&user_password';
 
-SET ECHO OFF
-SET VERIFY OFF
-SET MARKUP HTML ON
-SPOOL ON 
-SET NULL'_'
-SET TAB OFF
-SET LINESIZE 1000
-SET NEWPAGE NONE
-SET TRIMS OFF
-SET NUHWIDTN 50
-SILENT
-SPOOL NEW_CV.html
+
 PROMPT-------------------------------------------------------------------------CURICULUM VITAE--------------------------------------------------------------------------------
 
 
@@ -77,6 +66,5 @@ SELECT personName "NAME OF RECOMMANDER", relationShipLevel "RELATION", postAtThe
 FROM recommandation
 WHERE id_user = (SELECT id_user FROM Users WHERE name_user = '&user_name' AND user_password = '&user_password');
 
-SET MARKUP HTML OFF
-SPOOL OFF
-@NEW_CV
+
+@procedures/menu

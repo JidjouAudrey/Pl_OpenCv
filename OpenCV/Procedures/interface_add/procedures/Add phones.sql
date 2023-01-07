@@ -3,8 +3,14 @@ Declare
 v_ID_PROFIL Phones.id_profil%type;
 
 BEGIN
-SELECT id_profil INTO v_ID_PROFIL FROM Phones
-    WHERE isMobile = '&Mobile';
+SELECT pr.id_profil 
+INTO v_ID_PROFIL 
+FROM Phones p
+join profil pr
+on(p.id_profil=pr.id_profil)
+join users u
+on(pr.id_user=u.id_user)
+WHERE name_user = '&username';
 
     INSERT INTO PHONES
     (

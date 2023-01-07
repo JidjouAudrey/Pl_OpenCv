@@ -6,15 +6,22 @@ declare
 
 begin
 
-    select id_profil
+    select s.id_profil
     into v_profile_id 
-    from socialnetwork 
-    where title_social = '&nom';
+    from socialnetwork s
+    join Profil p
+    on p.id_profil = s.id_profil
+    JOIN Users u
+    ON p.id_user=u.id_user
+    WHERE name_user= '&Username';
 
  
     insert into socialnetwork 
     (
-        id_social, title_social, image_social,id_profil
+        id_social,
+         title_social,
+          image_social,
+          id_profil
    
     )
     values

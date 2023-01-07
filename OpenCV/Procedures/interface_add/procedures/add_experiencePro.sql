@@ -9,7 +9,9 @@ into   v_id_exp
 from Experience E
 join  Professional_exp p
 on (E.id_exp = p.id_exp)
-WHERE  title_exp = '&titre_de_experience';
+join users u
+on(u.id_user=E.id_user)
+WHERE  name_user= '&username';
 
 insert into  Professional_exp
 (
