@@ -1,2 +1,3 @@
 ALTER TABLE Cv 
-ADD CONSTRAINT fk_cv FOREIGN KEY (id_user) REFERENCES Users (id_user);
+ADD CONSTRAINT fk_cv FOREIGN KEY (id_user) REFERENCES Users (id_user)
+ON DELETE CASCADE;
