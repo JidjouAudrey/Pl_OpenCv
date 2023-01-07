@@ -13,7 +13,7 @@ JOIN Users u
 ON p.id_user=u.id_user
 WHERE name_user= '&Username';
 insert into Language (
-    id_lang,
+     id_lang,
      lang_title,
      lang_level,
      id_profil
@@ -23,10 +23,12 @@ values(
     seq_prof.nextval,
     '&lang_title',
     '&lang_level',
-
      v_id_profil
 );
 DBMS_OUTPUT.PUT_LINE('language created');
+exception
+ when no_data_found then
+  DBMS_OUTPUT.PUT_LINE('aucune valeur trouvée');
 END;
 /
 @Procedures/interface_add/creer_cv

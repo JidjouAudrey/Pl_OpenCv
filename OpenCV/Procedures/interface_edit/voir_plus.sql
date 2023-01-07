@@ -15,7 +15,7 @@ accept selection prompt "Choisissez une option: "
 set term off
 column script new_value v_script
 select case '&selection'
-        when '1' then '@ '
+        when '1' then '@Procedures/interface_edit/procedure_edit/edit_phones'
         when '2' then '@Procedures/interface_edit/procedure_edit/edit_socialnetwork'
         when '3' then '@Procedures/interface_edit/procedure_edit/Edit_formation'
         when '4' then '@Procedures/interface_edit/modifier_cv'
