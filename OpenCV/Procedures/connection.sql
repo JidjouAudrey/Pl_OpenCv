@@ -5,7 +5,7 @@ BEGIN
 SELECT id_user
 into v_user
 FROM users
-WHERE name_user = '&&Username' 
+WHERE name_user = '&Username' 
 AND user_password = '&user_password';
 IF (v_user IS NULL)THEN
 DBMS_OUTPUT.PUT_LINE ('this user not exist');
