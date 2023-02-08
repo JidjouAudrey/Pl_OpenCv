@@ -1,5 +1,6 @@
-PROMPT********************VOUS ETES SUR OPENCV*****************
-PROMPT********************MODIFIEZ VOTRE CV********************
+PROMPT
+PROMPT
+PROMPT********************MODIFIEZ CV********************
 PROMPT
 PROMPT'                           *****************************'
 PROMPT'                           |                           |'

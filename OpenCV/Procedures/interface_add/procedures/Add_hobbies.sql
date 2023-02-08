@@ -1,14 +1,12 @@
 set serveroutput on 
 declare
-
   v_id_user Hobbies.id_user%type;
+
 begin
 
-select h.id_user
-     into v_id_user
-     from Users u
-     join Hobbies h
-     on (u.id_user = h.id_user)
+select id_user
+into v_id_user
+from users
 where name_user='&USERNAME';
 
 insert into Hobbies 
@@ -24,6 +22,8 @@ insert into Hobbies
     '&title_hobbies',
      v_id_user
    );
-
+exception
+  when no_data_found then
+  DBMS_OUTPUT.PUT_LINE('this user not exist');
 end ;
 /

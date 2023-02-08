@@ -1,5 +1,6 @@
-PROMPT********************VOUS ETES SUR OPENCV*****************
-PROMPT********************MODIFIEZ VOTRE CV********************
+PROMPT
+PROMPT
+PROMPT********************MODIFIEZ CV********************
 PROMPT
 PROMPT'                           *****************************'
 PROMPT'                           |                           |'
@@ -18,7 +19,7 @@ select case '&selection'
         when '1' then '@Procedures/interface_edit/procedure_edit/edit_phones'
         when '2' then '@Procedures/interface_edit/procedure_edit/edit_socialnetwork'
         when '3' then '@Procedures/interface_edit/procedure_edit/Edit_formation'
-        when '4' then '@Procedures/interface_edit/modifier_cv'
+        when '4' then '@Procedures/interface_edit/edit_cv'
         when '5' then '@Procedures/interface_edit/voir_plus2 '
         else 'Accueil'
         end as script

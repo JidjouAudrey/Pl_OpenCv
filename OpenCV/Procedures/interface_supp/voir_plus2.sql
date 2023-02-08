@@ -1,5 +1,6 @@
-PROMPT********************VOUS ETES SUR OPENCV*****************
-PROMPT***************SUPPPRIMER UN ELEMENT DE VOTRE CV*****************
+PROMPT
+PROMPT
+PROMPT********************CREATION DE CV********************
 PROMPT
 PROMPT'                           *****************************'
 PROMPT'                           |                           |'
