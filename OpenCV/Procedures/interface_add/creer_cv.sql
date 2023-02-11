@@ -1,4 +1,6 @@
-PROMPT********************CREATION DE VOTRE CV *****************
+PROMPT
+PROMPT
+PROMPT********************CREATION DE CV********************
 PROMPT
 PROMPT'                           *****************************'
 PROMPT'                           |                            |'

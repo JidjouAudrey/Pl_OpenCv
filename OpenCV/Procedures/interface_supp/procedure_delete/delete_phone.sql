@@ -7,7 +7,7 @@ BEGIN
     where phoneNumber = '&phoneNumber';
     
 
-DBMS_OUTPUT.PUT_LINE(' Supprexion effectuer avec succes ');
+DBMS_OUTPUT.PUT_LINE(' Suppression effectuer avec succes ');
 
 end ;
 /

@@ -9,7 +9,7 @@ into v_id_user
 from Users u
 join  Recommandation r 
 on r.id_user = u.id_user
-where name_user='&Votre_Nom';
+where name_user='&Username';
 
     insert into Recommandation 
     (

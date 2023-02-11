@@ -42,7 +42,6 @@ PROMPT******************** ajout de contraintes pk table socialnetwork**********
 
 @Objects/Tables/Contraintes/ForeignKey/RunFk
 
-@Objects/Tables/Contraintes/Check/RunCheck
 
 @Objects/Tables/Contraintes/NotNull/RunValue
 
